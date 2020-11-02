@@ -10,7 +10,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ;Shift + Windows + Up (maximize a window across all displays) https://stackoverflow.com/a/9830200/470749
 ^+Up:: DoubleMaximum()
-^Space:: Run, brave,,max
+^!Space:: Run, brave,,max
 DoubleMaximum()
 {
     WinGetActiveTitle, Title
